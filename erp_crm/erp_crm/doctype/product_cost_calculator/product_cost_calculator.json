@@ -1,0 +1,227 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:PCC-{MM}-{YY}-{#####}",
+ "creation": "2026-01-26 23:31:21.564265",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_p9j0",
+  "amended_from",
+  "product",
+  "product_name",
+  "width",
+  "height",
+  "quantity",
+  "mark_up",
+  "remarks",
+  "column_break_zqf9",
+  "quote_list_section",
+  "customer_details_section",
+  "organisation_name",
+  "customer_name",
+  "email",
+  "phone",
+  "billing_address",
+  "delivery_address",
+  "customer_po",
+  "section_break_wrkx",
+  "calculation_results",
+  "column_break_hsde",
+  "section_break_nddf",
+  "quote_totals",
+  "section_break_kaul",
+  "column_break_hqlb",
+  "discount_column",
+  "type",
+  "value",
+  "discounted_total"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_p9j0",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Product Cost Calculator",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "width",
+   "fieldtype": "Int",
+   "label": "Width "
+  },
+  {
+   "fieldname": "height",
+   "fieldtype": "Int",
+   "label": "Height"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "mark_up",
+   "fieldtype": "Percent",
+   "label": "Mark Up "
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "column_break_zqf9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "quote_list_section",
+   "fieldtype": "Heading",
+   "label": "Quote List"
+  },
+  {
+   "fieldname": "customer_details_section",
+   "fieldtype": "Heading",
+   "label": "Customer Details"
+  },
+  {
+   "fieldname": "organisation_name",
+   "fieldtype": "Link",
+   "label": "Organisation Name",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Int",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "billing_address",
+   "fieldtype": "Data",
+   "label": "Billing Address"
+  },
+  {
+   "fieldname": "delivery_address",
+   "fieldtype": "Data",
+   "label": "Delivery Address"
+  },
+  {
+   "fieldname": "customer_po",
+   "fieldtype": "Data",
+   "label": "Customer PO"
+  },
+  {
+   "fieldname": "section_break_wrkx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "calculation_results",
+   "fieldtype": "Text",
+   "label": "Calculation Results"
+  },
+  {
+   "fieldname": "column_break_hsde",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_nddf",
+   "fieldtype": "Heading"
+  },
+  {
+   "bold": 1,
+   "fieldname": "quote_totals",
+   "fieldtype": "Text",
+   "label": "Quote Totals"
+  },
+  {
+   "fieldname": "section_break_kaul",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_hqlb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "discount_column",
+   "fieldtype": "Column Break",
+   "label": "Discount"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "Percentage %\nFixed (Currency)"
+  },
+  {
+   "fieldname": "value",
+   "fieldtype": "Int",
+   "label": "Value"
+  },
+  {
+   "fieldname": "discounted_total",
+   "fieldtype": "Float",
+   "label": "Discounted Total"
+  },
+  {
+   "fieldname": "product",
+   "fieldtype": "Link",
+   "label": "Product",
+   "options": "Product"
+  },
+  {
+   "fetch_from": "product.product_name",
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "label": "Product Name"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-03-03 22:00:33.876159",
+ "modified_by": "Administrator",
+ "module": "ERP-CRM",
+ "name": "Product Cost Calculator",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
