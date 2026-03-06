@@ -144,7 +144,11 @@ app_license = "mit"
 # 		"on_trash": "method"
 # 	}
 # }
-
+doc_events = {
+    "Product": {
+        "after_insert": "erp_crm.erp_crm.doctype.product.product.after_insert"
+    }
+}
 # Scheduled Tasks
 # ---------------
 

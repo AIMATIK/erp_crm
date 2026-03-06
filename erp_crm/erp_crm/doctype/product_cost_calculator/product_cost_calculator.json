@@ -15,8 +15,11 @@
   "quantity",
   "mark_up",
   "remarks",
+  "calculation_results",
   "column_break_zqf9",
   "quote_list_section",
+  "calculated_charge",
+  "quotes",
   "customer_details_section",
   "organisation_name",
   "customer_name",
@@ -25,10 +28,7 @@
   "billing_address",
   "delivery_address",
   "customer_po",
-  "section_break_wrkx",
-  "calculation_results",
-  "column_break_hsde",
-  "section_break_nddf",
+  "quote_total",
   "quote_totals",
   "section_break_kaul",
   "column_break_hqlb",
@@ -98,21 +98,28 @@
    "options": "Customer"
   },
   {
+   "fetch_from": "organisation_name.customer_name",
    "fieldname": "customer_name",
    "fieldtype": "Data",
    "label": "Customer Name"
   },
   {
+   "fetch_from": "organisation_name.email_id",
+   "fetch_if_empty": 1,
    "fieldname": "email",
    "fieldtype": "Data",
    "label": "Email"
   },
   {
+   "fetch_from": "organisation_name.mobile_no",
+   "fetch_if_empty": 1,
    "fieldname": "phone",
    "fieldtype": "Int",
    "label": "Phone"
   },
   {
+   "fetch_from": "organisation_name.customer_primary_address",
+   "fetch_if_empty": 1,
    "fieldname": "billing_address",
    "fieldtype": "Data",
    "label": "Billing Address"
@@ -128,28 +135,15 @@
    "label": "Customer PO"
   },
   {
-   "fieldname": "section_break_wrkx",
-   "fieldtype": "Section Break"
-  },
-  {
    "bold": 1,
    "fieldname": "calculation_results",
    "fieldtype": "Text",
    "label": "Calculation Results"
   },
   {
-   "fieldname": "column_break_hsde",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "section_break_nddf",
-   "fieldtype": "Heading"
-  },
-  {
    "bold": 1,
    "fieldname": "quote_totals",
-   "fieldtype": "Text",
-   "label": "Quote Totals"
+   "fieldtype": "Text"
   },
   {
    "fieldname": "section_break_kaul",
@@ -192,13 +186,30 @@
    "fieldname": "product_name",
    "fieldtype": "Data",
    "label": "Product Name"
+  },
+  {
+   "fieldname": "calculated_charge",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Calculate charges"
+  },
+  {
+   "fieldname": "quotes",
+   "fieldtype": "Text",
+   "read_only": 1
+  },
+  {
+   "fieldname": "quote_total",
+   "fieldtype": "Heading",
+   "label": "Quote Totals",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-03-03 22:00:33.876159",
+ "modified": "2026-03-06 19:36:16.581266",
  "modified_by": "Administrator",
  "module": "ERP-CRM",
  "name": "Product Cost Calculator",

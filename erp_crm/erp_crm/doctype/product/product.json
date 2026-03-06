@@ -11,6 +11,7 @@
   "product",
   "product_name",
   "group",
+  "product_type",
   "column_break_jm7u",
   "uom",
   "description",
@@ -137,12 +138,18 @@
    "in_filter": 1,
    "in_list_view": 1,
    "label": "OR Cost"
+  },
+  {
+   "fieldname": "product_type",
+   "fieldtype": "Select",
+   "label": "Product Type",
+   "options": "\nUnit Based\nArea Based"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-03 21:52:12.369433",
+ "modified": "2026-03-06 18:29:19.538070",
  "modified_by": "Administrator",
  "module": "ERP-CRM",
  "name": "Product",
