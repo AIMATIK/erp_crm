@@ -21,7 +21,7 @@ def after_insert(doc, method=None):
     item.item_name = doc.product_name
     item.item_group = doc.group
     item.stock_uom = doc.uom
-
+    item.custom_product_type = doc.product_type
     # Add UOM child table
     item.append("uoms", {
         "uom": doc.uom,
